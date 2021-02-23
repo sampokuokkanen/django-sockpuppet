@@ -5,7 +5,7 @@ import WebsocketConsumer from '../../javascript/stimulus-websocket/index'
 
 const application = Application.start()
 const consumer = new WebsocketConsumer(
-  `ws://${window.location.host}/ws/sockpuppet-sync`, {debug: false}
+  `wss://${window.location.host}/ws/sockpuppet-sync`, {debug: false}
 )
 
 StimulusReflex.initialize(application, { consumer })
